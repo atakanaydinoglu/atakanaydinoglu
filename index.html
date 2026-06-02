@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Atakan Aydınoğlu'nun hikaye, şiir, çeviri, inceleme, analiz ve bildiri yazıları için kişisel yayın arşivi."
+    />
+    <meta name="theme-color" content="#102f35" />
+    <title>Atakan Aydınoğlu Portal</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#arsiv">Arşive geç</a>
+
+    <header class="site-header" aria-label="Üst menü">
+      <a class="brand" href="index.html" aria-label="Ana sayfa">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span>
+          <strong>Atakan Aydınoğlu</strong>
+          <small>Portal</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Site bölümleri">
+        <a href="#turler">Türler</a>
+        <a href="#arsiv">Arşiv</a>
+        <a href="#ceviri">Çeviri</a>
+        <a href="#ilkeler">İlkeler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </header>
+
+    <main id="ust">
+      <section class="hero" aria-labelledby="hero-title">
+  <img
+    class="hero-image"
+    src="assets/writing-translation-hero.png"
+    alt="Yazı sayfaları, altyazı blokları ve çeviri notlarından oluşan renkli masa illüstrasyonu"
+  />
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Kişisel Yayın Portalı</p>
+    <h1 id="hero-title"><span>Atakan</span> <span>Aydınoğlu</span></h1>
+    
+    <div class="hero-divider" aria-hidden="true">❦</div>
+    
+    <p class="hero-copy">
+      Kağıdın dokusundan ekranın ışığına sızan kelimeler,<br>
+      kurgu ile gerçeğin kesişim noktası.
+    </p>
+    <div class="hero-actions" aria-label="Öne çıkan bağlantılar">
+      <a class="button primary" href="#arsiv">Arşivi Gez</a>
+      <a class="button secondary" href="#turler">Türlere Bak</a>
+    </div>
+    <dl class="hero-stats" aria-label="Arşiv özeti">
+      <div>
+        <dt id="stat-total">0</dt>
+        <dd>yayın</dd>
+      </div>
+      <div>
+        <dt id="stat-story">0</dt>
+        <dd>hikaye</dd>
+      </div>
+      <div>
+        <dt id="stat-translation">0</dt>
+        <dd>çeviri</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+      <section class="rooms-section" id="turler" aria-labelledby="rooms-title">
+        <div class="section-heading">
+          <p class="eyebrow">Tasnif Sahası</p>
+          <h2 id="rooms-title">Anlatı Katmanları</h2>
+          <p>
+            Bu arşiv, her metnin kendi özgün sesini duyurabileceği,<br> türe özgü bir okunabilirlik deneyimi sunmak için tasarlandı.
+          </p>
+        </div>
+        <div class="room-grid" id="roomGrid"></div>
+      </section>
+
+      <section class="experience-section" id="medya">
+  <div class="section-heading">
+    <p class="eyebrow">Atakan Aydınoğlu Youtube</p>
+    <h2>Kıyafetlerimiz mi bizi giyiyor?</h2>
+    <p>
+      Kültür ve Sanat ekseninde incelemeler.
+    </p>
+  </div>
+
+  <div class="youtube-showcase">
+    <div class="video-embed">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1WfvtS6yeTk?si=auEWh5pvYhbts4_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <div class="showcase-actions">
+      <a href="https://youtube.com/@EnlightChronicles" target="_blank" rel="noopener noreferrer" class="button primary">Kanala Abone Ol</a>
+      
+      <div class="social-links-inline">
+        <a href="https://github.com/KULLANICI_ADIN" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span aria-hidden="true">&bull;</span>
+        <a href="https://linkedin.com/in/KULLANICI_ADIN" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="archive-section" id="arsiv" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <p class="eyebrow">Arşiv</p>
+          <h2 id="archive-title">Yayınlar</h2>
+          <p>
+            Tür, alt sınıf, etiket ve tarihe göre gezilebilir yayın dizini.
+          </p>
+        </div>
+
+        <div class="archive-tools" aria-label="Arşiv araçları">
+          <label class="search-field" for="searchInput">
+            <span>Arama</span>
+            <input
+              id="searchInput"
+              type="search"
+              autocomplete="off"
+              placeholder="Başlık, etiket veya özet ara"
+            />
+          </label>
+
+          <label class="sort-field" for="sortSelect">
+            <span>Sıralama</span>
+            <select id="sortSelect">
+              <option value="newest">Yeni tarihli</option>
+              <option value="title">Başlığa göre</option>
+              <option value="classification">Alt sınıfa göre</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filter-block" aria-label="Tür filtreleri">
+          <p>Tür</p>
+          <div class="filter-group" id="filterGroup"></div>
+        </div>
+
+        <div class="filter-block" aria-label="Alt sınıf filtreleri">
+          <p>Alt sınıf</p>
+          <div class="filter-group" id="classificationGroup"></div>
+        </div>
+
+        <p class="result-meta" id="resultMeta" aria-live="polite"></p>
+        <div class="post-grid" id="postGrid"></div>
+      </section>
+
+    
+
+      <section class="translation-section" id="oksijen-simülatörü" aria-labelledby="simulator-title">
+  <div class="section-heading">
+    <p class="eyebrow">Oksijen Kredisi Evreni</p>
+    <h2 id="simulator-title">ASP Oksijen Simülatörü</h2>
+    <p>
+      Şehirlerdeki oksijen seviyeleri hiyerarşiye göre belirlenir. Kaydırıcıyı kullanarak farklı bölgelerin insan zihni ve bedeni üzerindeki etkilerini deneyimleyin.
+    </p>
+  </div>
+
+  <div style="max-width: 800px;">
+    <!-- Kaydırıcı (Slider) Alanı -->
+    <div style="margin-bottom: 32px; padding: 0 10px;">
+      <input type="range" min="0" max="2" value="0" id="oxySlider" class="custom-slider">
+      <div style="display: flex; justify-content: space-between; margin-top: 12px; font-size: 0.8rem; font-weight: 850; text-transform: uppercase; color: rgba(255, 255, 255, 0.6);">
+        <span>Subsidium (%17.0)</span>
+        <span>Veritas (%19.0)</span>
+        <span>Ordium (%21.0)</span>
+      </div>
+    </div>
+
+    <!-- Simülatör Kartları -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
+      
+      <!-- Sistem Durumu (Sol Kart) -->
+      <div class="translation-card" style="--accent: #f4cf76; min-height: 240px;">
+        <span>SİSTEM DURUMU</span>
+        <h3 style="font-size: 1.4rem; line-height: 1.4; margin-top: 12px;">Aktarım Birimi Bağlantısı Aktif</h3>
+        <p style="margin-top: auto; font-size: 0.95rem;">
+          <strong style="color: #f4cf76;">Uyarı:</strong> Biyolojik verimin korunması için oksijen seviyesi bulunduğunuz bölgeye göre regüle edilmektedir.
+        </p>
+      </div>
+
+      <!-- Dinamik Etki Alanı (Sağ Kart) -->
+      <div class="translation-card" style="--accent: #b94b5f; min-height: 240px;">
+        <span id="oxyLabel" style="color: #f87171;">SUBSIDIUM BÖLGESİ</span>
+        <h3 id="oxyText" style="font-size: 1.4rem; line-height: 1.4; margin-top: 12px; transition: opacity 0.2s;">"Ciğerlerinde paslı bir ağırlık."</h3>
+        <p id="oxyNote" style="margin-top: auto; font-size: 0.95rem; transition: opacity 0.2s;">
+          <strong style="color: #f87171;">Klinik Etki:</strong> Fiziksel iş gücü için tasarlanmış düşük seviye. Dikkat dağınıklığını engeller ama uzun vadede hafızayı bulanıklaştırır.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sitenin arşivi çökmesin diye orijinal div'i gizli tutuyoruz -->
+  <div class="translation-rail" id="translationRail" style="display: none;"></div>
+</section>
+
+      <section class="principles-section" id="ilkeler" aria-labelledby="principles-title">
+  <div class="section-heading">
+    <p class="eyebrow">İlham ve Kökenler</p>
+    <h2 id="principles-title">Evrenin Kökeni: Oksijen Kredisi</h2>
+    <p>Oksijen Kredisi evreninin arka planını oluşturan prensipleri ve dünyanın işleyişini anlatan bir çerçeve.</p>
+  </div>
+
+  <div class="accordion-item active">
+      <button class="accordion-header" aria-expanded="true">
+        <span class="accordion-title">ASP El Kitabı & Bölge Oranları</span>
+        <span class="accordion-icon">−</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          Medeniyetin sürekliliği, her bireyin kendi biyolojik ve zihinsel verimine en uygun atmosferde konumlandırılmasına bağlıdır. Atmosfer Stabilizasyon Programı (ASP), bu dengenin korunması adına şehirlerin oksijen seviyelerini katı bir hiyerarşiyle yönetir:
+          <br><br>
+          <strong>Veritas (%19,0):</strong> Bilişsel dengenin ve bilgi akışının sürdürülebilmesi için optimal sınır.
+          <br><br>
+          <strong>Subsidium (%17,0):</strong> Fiziksel iş gücünün odaklanma becerisini artırmak ve dikkat dağınıklığını engellemek adına düşük seviye.
+          <br><br>
+          <strong>Praesidium (%20,5):</strong> Girişim ve yatırım vizyonerlerinin yüksek stresini nötralize eden uyarılmış seviye.
+          <br><br>
+          <strong>Ordium (%21,0):</strong> Yönetim, akademi ve şifa merkezleri için tam stabilizasyon. 
+          <br><br>
+          Sistem otomatik olsa da, organik sapmaları engellemek adına insan eliyle yazılmış 'Aktarım Birimi Raporları' manuel kontrol için hayati önem taşır.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" aria-expanded="false">
+        <span class="accordion-title">Veritas Vox İllüzyonu & Muhalif Frekanslar</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>Şehrin her meydanına dikilmiş renkli ışıklandırmalar ve panolar, Veritas Vox’un steril yalanlarını topluma enjekte eder: 'Sağlık, Verim, İstikrar'. Ancak bu ihtişamlı vitrinin arkasında, sistemin oksijen oranlarına yaptığı gizli, gürültülü ve tekinsiz fiziksel müdahaleler gizlidir. Gerçeği sorguladığı için işinden ve özgürlüğünden olan eski Vox çalışanları, sistemin illüzyonunu bozmak adına karanlık ara sokaklarda ve Veritas Satranç Kulübü gibi paravan noktalarda örgütlenmektedir. Onlar için sistem bir koruyucu değil; insan nefesini bir borç mekanizmasına çeviren devasa bir tabuttur.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header" aria-expanded="false">
+        <span class="accordion-title">A.S.P.A.G. Protokolleri & Sosyal Tertip</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>Atmosfer Stabilizasyon Programı Asayiş Gücü (A.S.P.A.G.), sistemin kurallarına itaati ve asayişi sağlamakla görevli, arma ve rozetlerden arındırılmış militarist bir denetim mekanizmasıdır. Şehirlerde kimlik doğrulama cihazları, tek tip saç-sakal tıraşına sahip standart personel yapısı ve zifiri karanlık çöktüğünde bile sokakları gündüz gibi aydınlatan asayiş ışıklarıyla tam bir gözetim toplumu inşa edilmiştir. VAG77 (Veritas Asayiş Gücü) gibi birimler, sadece düzeni korumakla kalmaz; sistemin kusursuz işleyişine karşı doğabilecek her türlü 'anormallik ve şüphe' dalgasını daha büyümeden soğurmak üzere eğitilir</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="contact-section" id="iletisim" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">İletişim</p>
+          <h2 id="contact-title">Metinler ve çeviri işleri üzerine</h2>
+          <p>
+            Yayınlar, çeviri örnekleri ve inceleme yazıları hakkında iletişim için.
+          </p>
+        </div>
+        <a class="contact-link" href="mailto:atakanaydinoglu3@gmail.com">atakanaydinoglu3@gmail.com</a>
+      </section>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const transSlider = document.querySelector("#transSlider");
+    const targetLabel = document.querySelector("#targetLabel");
+    const targetText = document.querySelector("#targetText");
+    const targetNote = document.querySelector("#targetNote");
+
+    if (transSlider) {
+      const translationData = [
+        {
+          label: "EREK METİN (MOTAMOT)",
+          text: '"Atlarını tut, dostum!"',
+          note: '<strong style="color: #4ade80;">Analiz:</strong> Kelimeler birebir çevrilmiştir. Ancak Türkçe konuşan biri günlük hayatta bu kalıbı kullanmaz. Eğreti durur.'
+        },
+        {
+          label: "EREK METİN (ANLAMSAL)",
+          text: '"Acele etme, arkadaşım!"',
+          note: '<strong style="color: #4ade80;">Analiz:</strong> Mesaj doğru iletilmiştir. Fakat kaynak metindeki o alaycı ve deyimsel renk kaybolmuş, metin sıradanlaşmıştır.'
+        },
+        {
+          label: "EREK METİN (KÜLTÜREL)",
+          text: '"Acelen ne, atlı mı kovalıyor birader!"',
+          note: '<strong style="color: #4ade80;">Analiz:</strong> Kaynak metindeki "at" imgesi korunurken, Türk kültürünün doğal deyim dağarcığına kusursuz bir geçiş yapılmıştır.'
+        }
+      ];
+
+      transSlider.addEventListener("input", (event) => {
+        const value = event.target.value;
+        const data = translationData[value];
+
+        targetText.style.opacity = 0;
+        targetNote.style.opacity = 0;
+
+        setTimeout(() => {
+          targetLabel.textContent = data.label;
+          targetText.textContent = data.text;
+          targetNote.innerHTML = data.note;
+
+          targetText.style.opacity = 1;
+          targetNote.style.opacity = 1;
+        }, 150);
+      });
+    }
+  });
+</script>
+  
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // ==========================================
+      // 1. YERELLEŞTİRME TERAZİSİ KODU
+      // ==========================================
+      const transSlider = document.querySelector("#transSlider");
+      const targetLabel = document.querySelector("#targetLabel");
+      const targetText = document.querySelector("#targetText");
+      const targetNote = document.querySelector("#targetNote");
+
+      if (transSlider) {
+        const translationData = [
+          {
+            label: "EREK METİN (MOTAMOT)",
+            text: '"Atlarını tut, dostum!"',
+            note: '<strong style="color: #4ade80;">Analiz:</strong> Kelimeler birebir çevrilmiştir. Ancak Türkçe konuşan biri günlük hayatta bu kalıbı kullanmaz. Eğreti durur.'
+          },
+          {
+            label: "EREK METİN (ANLAMSAL)",
+            text: '"Acele etme, arkadaşım!"',
+            note: '<strong style="color: #4ade80;">Analiz:</strong> Mesaj doğru iletilmiştir. Fakat kaynak metindeki o alaycı ve deyimsel renk kaybolmuş, metin sıradanlaşmıştır.'
+          },
+          {
+            label: "EREK METİN (KÜLTÜREL)",
+            text: '"Acelen ne, atlı mı kovalıyor birader!"',
+            note: '<strong style="color: #4ade80;">Analiz:</strong> Kaynak metindeki "at" imgesi korunurken, Türk kültürünün doğal deyim dağarcığına kusursuz bir geçiş yapılmıştır.'
+          }
+        ];
+
+        transSlider.addEventListener("input", (event) => {
+          const value = event.target.value;
+          const data = translationData[value];
+
+          targetText.style.opacity = 0;
+          targetNote.style.opacity = 0;
+
+          setTimeout(() => {
+            targetLabel.textContent = data.label;
+            targetText.textContent = data.text;
+            targetNote.innerHTML = data.note;
+
+            targetText.style.opacity = 1;
+            targetNote.style.opacity = 1;
+          }, 150);
+        });
+      }
+
+      // ==========================================
+      // 2. ENTELEKTÜEL PUSULA (AKORDEON) KODU
+      // ==========================================
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+      
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.parentElement;
+          const content = item.querySelector('.accordion-content');
+          const icon = header.querySelector('.accordion-icon');
+          const isOpen = item.classList.contains('active');
+          
+          // Önce açık olan diğer tüm sekmeleri kapat
+          document.querySelectorAll('.accordion-item').forEach(otherItem => {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.accordion-content').style.maxHeight = null;
+            otherItem.querySelector('.accordion-icon').textContent = '+';
+            otherItem.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+          });
+          
+          // Tıklanan sekme açık değilse aç
+          if (!isOpen) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.textContent = '−';
+            header.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Sayfa ilk yüklendiğinde varsayılan olarak açık olan sekmenin içeriğini göster
+      const activeContent = document.querySelector('.accordion-item.active .accordion-content');
+      if (activeContent) {
+        activeContent.style.maxHeight = activeContent.scrollHeight + "px";
+      }
+
+    });
+  </script>
+  
+
+</body>
+</html>
+
+  </body>
+</html>
